@@ -1,0 +1,27 @@
+# Node.js
+node_modules/
+
+# Build files
+dist/
+build/
+
+# Temporary files
+*.tmp
+.cache/
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Coverage
+coverage/
+/img/.gitkeep
+/js/vendor/.gitkeep
