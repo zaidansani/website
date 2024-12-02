@@ -243,8 +243,12 @@ a {
 .cv-subcomponent {
   padding: 2px 20px 20px 20px;
   margin: 0 auto;
+}
+
+.cv-subcomponent-header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1vh;
 }
 
 .cv-subcomponent-left {
@@ -263,6 +267,29 @@ a {
 .cv-subcomponent-header-bottom {
   font-style: italic;
   color: var(--primary)
+}
+
+.cv-subcomponent-description {
+  text-align: left;
+  list-style-position: inside;
+}
+
+.cv-subcomponent-group {
+  display: block;
+  justify-content: center;
+}
+
+.cv-subcomponent-group h1 {
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: "Taviraj", serif;
+  text-align: left;
+  text-decoration-line: underline;
+}
+
+.cv-subcomponent-group p {
+  font-size: 0.9em;
+  text-align: left;
 }
 /*
  * A better looking default horizontal rule
