@@ -28,10 +28,10 @@
 html, body {
   color: var(--fg);
   height: 100%;
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1.4;
   font-family: "Outfit", sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   background-color: var(--bg);
   scroll-behavior: smooth;
 }
@@ -48,13 +48,17 @@ section {
   align-items: center;
   justify-content: center;
   display: flex;
-  gap: 10px;
+  gap: 10vw;
   scroll-snap-align: start;
   transition: background-color 0.5s ease;
 }
 
 p {
   margin-bottom: 10px;
+}
+
+.section-items {
+  width: 80vw;
 }
 
 .odd {
@@ -118,7 +122,7 @@ a {
 }
 
 .front-heading {
-  font-size: 1.5em;
+  font-size: 1.3em;
   animation: fadeIn 3s;
   padding: 10px;
   font-family: "Libre Baskerville", serif;
@@ -175,7 +179,7 @@ a {
   font-size: 1.3em;
   background: var(--primary);
   border-radius: 10px;
-  padding: 5px 15px 5px 15px;
+  padding: 1vh 1vw 1vh 1vw;
   font-weight: 500;
   color: var(--fg);
   text-decoration: none;
