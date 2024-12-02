@@ -28,8 +28,8 @@
 html, body {
   color: var(--fg);
   height: 100%;
-  font-size: 1.2em;
-  line-height: 1.4;
+  font-size: 1rem;
+  line-height: 1.1;
   font-family: "Outfit", sans-serif;
   font-weight: 400;
   background-color: var(--bg);
@@ -44,6 +44,8 @@ html, body {
  */
 
 section {
+  max-height: 100vh;
+  min-height: 100vh;
   height: 100vh;
   align-items: center;
   justify-content: center;
@@ -168,18 +170,22 @@ a {
 }
 
 .links {
-  padding-top: 10px;
-  gap: 20px;
+  padding-top: 1vh;
   display: flex;
   margin: 0 auto;
   justify-content: center;
 }
 
 .links a {
-  font-size: 1.3em;
+  font-size: 0.8em;
+  vertical-align: center;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
   background: var(--primary);
-  border-radius: 10px;
-  padding: 1vh 1vw 1vh 1vw;
+  border-radius: 1vw;
+  padding: 1vw 1vw 1vw 1vw;
   font-weight: 500;
   color: var(--fg);
   text-decoration: none;
@@ -198,16 +204,30 @@ a {
   text-align: center;
 }
 
+.cv-header {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.cv-links a {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  justify-content: center;
+}
+
 .cv-heading {
   padding-top: 5px;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 900;
   letter-spacing: 2px;
   font-family: "Taviraj", serif;
 }
 
 .cv-component {
-  width: 65%;
+  width: 85%;
   justify-content: center;
   margin: 0 auto;
 }
@@ -216,7 +236,7 @@ a {
   text-align: left;
   padding-top: 15px;
   padding-bottom: 15px;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-family: "Libre Baskerville", serif;
 }
 
@@ -379,6 +399,21 @@ textarea {
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
+  object {
+    width: 30vw;
+  }
+
+  .front-heading {
+    font-size: 1em;
+  }
+
+  .links a {
+    font-size: 1em;
+  }
+
+  .front-body {
+    font-size: 1.3em;
+  }
 }
 
 @media print,
